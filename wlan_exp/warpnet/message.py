@@ -688,7 +688,7 @@ class Buffer(Message):
         except struct.error as err:
             # Ignore the data.  We want predictable behavior on error
             print("Error unpacking WARPNet buffer: {0}\n".format(err),
-                  "    Ignorning data.")
+                  "    Ignoring data.")
         
         return (args, data)
 
