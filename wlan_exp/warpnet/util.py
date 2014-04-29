@@ -723,6 +723,7 @@ def _check_host_interface(host_interface, bcast_port):
 
     # Create a temporary UDP socket to get the hostname
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
     s.connect((test_ip_addr, bcast_port))
     socket_name = s.getsockname()[0]
 
