@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/WARP/!svn/ver/3452/ReferenceDesigns/w3_802.11/python/examples/chan_est_viewer
+END
+ofdm_chan_est_viewer.fig
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/WARP/!svn/ver/3323/ReferenceDesigns/w3_802.11/python/examples/chan_est_viewer/ofdm_chan_est_viewer.fig
+END
+ofdm_chan_est_viewer.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/WARP/!svn/ver/3364/ReferenceDesigns/w3_802.11/python/examples/chan_est_viewer/ofdm_chan_est_viewer.m
+END
+chan_ests_to_HDF5.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/WARP/!svn/ver/3452/ReferenceDesigns/w3_802.11/python/examples/chan_est_viewer/chan_ests_to_HDF5.py
+END
+rx_data_from_hdf5.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/WARP/!svn/ver/3323/ReferenceDesigns/w3_802.11/python/examples/chan_est_viewer/rx_data_from_hdf5.m
+END
