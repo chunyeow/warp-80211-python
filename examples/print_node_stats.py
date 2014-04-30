@@ -132,16 +132,17 @@ def print_stats(stats, station_info=None):
         if not hostname:
             stat_id = ''.join('{0:02X}:'.format(ord(x)) for x in stat_id)[:-1]
 
-        msg += "{0:<20} ".format(stat_id)
-        msg += "{0:8d} ".format(stat['data_num_tx_packets_success'])
-        msg += "{0:8d} ".format(stat['mgmt_num_tx_packets_success'])        
-        msg += "{0:8d} ".format(stat['data_num_rx_packets'])
-        msg += "{0:8d} ".format(stat['mgmt_num_rx_packets'])
-        msg += "{0:8d} ".format(stat['data_num_tx_bytes_success'])
-        msg += "{0:8d} ".format(stat['mgmt_num_tx_bytes_success'])
-        msg += "{0:8d} ".format(stat['data_num_rx_bytes'])
-        msg += "{0:8d} ".format(stat['mgmt_num_rx_bytes'])
-        msg += "\n"
+	if hostname or stat_id[0:8] == '40:D8:55':
+            msg += "{0:<20} ".format(stat_id)
+            msg += "{0:8d} ".format(stat['data_num_tx_packets_success'])
+            msg += "{0:8d} ".format(stat['mgmt_num_tx_packets_success'])        
+            msg += "{0:8d} ".format(stat['data_num_rx_packets'])
+            msg += "{0:8d} ".format(stat['mgmt_num_rx_packets'])
+            msg += "{0:8d} ".format(stat['data_num_tx_bytes_success'])
+            msg += "{0:8d} ".format(stat['mgmt_num_tx_bytes_success'])
+            msg += "{0:8d} ".format(stat['data_num_rx_bytes'])
+            msg += "{0:8d} ".format(stat['mgmt_num_rx_bytes'])
+            msg += "\n"
     print(msg)
 
 
