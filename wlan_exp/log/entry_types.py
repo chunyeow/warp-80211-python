@@ -291,7 +291,7 @@ class WlanExpLogEntryType(object):
 
         while (index < buf_size):
             try:
-                dataTuple = unpack(self.fields_fmt_struct, buf[index:index+entry_size])
+                dataTuple = unpack(self.fields_fmt_struct, buffer(buf[index:index+entry_size]))
                 all_names = self.get_field_names()
                 all_fmts  = self.get_field_struct_formats()
 
