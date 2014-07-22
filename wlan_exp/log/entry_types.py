@@ -702,7 +702,7 @@ entry_txrx_stats.append_field_defs([
             ('last_timestamp',                 'Q',      'uint64',  'Microsecond timer value at time of last Tx or Rx event to node with address mac_addr'),
             ('mac_addr',                       '6s',     '6uint8',  'MAC address of remote node whose statics are recorded here'),
             ('associated',                     'B',      'uint8',   'Boolean indicating whether remote node is currently associated with this node'),
-            ('padding',                        'x',      'uint8',   ''),
+	    ('last_power',		       'b',	 'int8',    'last power for probe request frame'),
             ('data_num_rx_bytes',              'Q',      'uint64',  'Total number of bytes received in DATA packets from remote node'),
             ('data_num_tx_bytes_success',      'Q',      'uint64',  'Total number of bytes successfully transmitted in DATA packets to remote node'),
             ('data_num_tx_bytes_total',        'Q',      'uint64',  'Total number of bytes transmitted (successfully or not) in DATA packets to remote node'),
